@@ -1,0 +1,168 @@
+
+/*  >>>>>>>>>>>>>>>>>>>>> FONTS  <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two:700,700i|Space+Mono");
+@import url("https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+/*  >>>>>>>>>>>>>>>>>>>>> GLOBAL STYLE  <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.container {
+  width: 100%;
+}
+
+section {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 0.7px dashed #900000;
+}
+
+.title-h1 {
+  font-family: "Lobster Two", cursive;
+  font-style: italic;
+  margin: 40px 40px 0;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0 1px 0 #900000, 0 2px 0 #c7c5c5, 0 3px 0 #bbbaba,
+    0 4px 0 #b7b6b6, 0 5px 0 #a9a6a6, 0 6px 1px #29325233,
+    0 0 5px rgba(41, 50, 82, 0.1), 0 1px 3px rgba(41, 50, 82, 0.1),
+    0 3px 5px hsla(227, 33%, 24%, 0.1), 0 5px 10px rgba(41, 50, 82, 0.2),
+    0 10px 10px rgba(41, 50, 82, 0.3), 0 20px 20px rgba(41, 50, 82, 0.1);
+}
+
+.title-h2 {
+  font-family: "Lobster Two", cursive;
+  margin: 20px 20px;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 0 1px 0 #900000, 0 2px 0 #900000, 0 3px 0 #bbbaba,
+    0 4px 0 #b7b6b6, 0 5px 0 #a9a6a6, 0 6px 1px rgba(0, 0, 0, 0.2),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1),
+    0 3px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.2),
+    0 10px 10px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title-h3 {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Exo 2', sans-serif; */
+  /* font-family: 'Apple Chancery'; */
+  margin: 10px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 0 1px 0 #900000, 0 2px 0 #900000, 0 3px 0 #900000,
+    0 4px 0 #b7b6b6, 0 5px 0 #a9a6a6, 0 6px 1px rgba(0, 0, 0, 0.2),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1),
+    0 3px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.2),
+    0 10px 10px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sectionHeader {
+  position: relative;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.sectionHeader h4 {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.125rem solid #900000;
+  font-size: 1.25rem;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #900000;
+}
+.sectionHeader h4::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1.25rem;
+  transform: translateX(-1.25rem);
+  border-top: 1.25rem solid #900000;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+}
+.sectionHeader h4::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1.125rem;
+  transform: translateX(-1.25rem);
+  border-top: 1.25rem solid #fff;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+}
+
+
+
+
+
+
+/*  >>>>>>>>>>>>>>>>>>>>> CURRENT STYLE  <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* 
+.inputUnit2Task8-1,
+.inputUnit2Task9-1,
+.inputUnit2Task9-1 {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  border: #FEFDC4;
+  border-bottom: 1px solid #ccc;
+}
+
+a.inputUnit2Task8-2,
+a.inputUnit2Task9-2,
+a.inputUnit2Task10-2{
+  display: inline-block;
+  text-shadow: 1px 1px #fff;
+  text-decoration: none;
+  padding: 0.3em 1em;
+  border: 1px solid #aaa;
+  border-radius: 100px;
+  outline: none;
+  background: #d6dbbf no-repeat;
+  background-image: linear-gradient(to left, #aaa, #aaa),
+    linear-gradient(to left, #feffe8, #feffe8),
+    linear-gradient(#feffe8, #d6dbbf);
+  background-position: calc(100% - 2.7em) 0, calc(100% - 2.7em + 1px) 0, 0 0;
+  background-size: 1px 100%, 1px 100%, auto auto;
+  overflow: hidden;
+}
+
+a.inputUnit2Task8-2,
+a.inputUnit2Task9-2,
+a.inputUnit2Task10-2:after{
+  content: "\bb";
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  margin-left: 1.4em;
+  vertical-align: middle;
+  font-family: "Times", "Times New Roman", "serif", "sans-serif", "EmojiSymbols";
+  font-weight: 700;
+  font-size: 140%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+a.inputUnit2Task8-2,
+a.inputUnit2Task9-2,
+a.inputUnit2Task10-2:hover {
+  background-color: #fdfd9f;
+  background-image: linear-gradient(to left, #aaa, #aaa),
+    linear-gradient(to left, #feffe8, #feffe8),
+    linear-gradient(#fffce7, #fdfd9f);
+}
+a.inputUnit2Task8-2,
+a.inputUnit2Task9-2,
+a.inputUnit2Task10-2:active:after {
+  bottom: -1.2em;
+  transition: 0.3s;
+} */
