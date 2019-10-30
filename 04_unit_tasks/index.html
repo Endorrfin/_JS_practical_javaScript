@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Unit 04</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title-h1">Course: [_JS_] practical javaScript</h1>
+        <h1 class="title-h2">Author: Alexander Luschenko</h2>
+            <h2 class="title-h3">Тема IV: "ОПЕРАТОР СРАВНЕНИЯ. IF, ELSE"</h4>
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 01 - Guess the number</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Игра Угадай число.
+                        С помощью функции при загрузке страницы генерируйте случайное число от 0 до 9. Добавьте его в
+                        переменную.
+                        Создайте input[type = text] и кнопку. На кнопку добавьте функцию, которая читает введенное
+                        пользователем число в элемент input. Проверьте введеное число: - не ввел ли пользователь пустую
+                        строку - ввел ли пользователь число
+                        Сравните введенное и загаданное число. Если они совпали - выведите alert с поздравлением и
+                        перезагрузите страницу. Если не совпали - выведите alert с сообщением (больше или меньше
+                        введенное число загаданному).
+                    </p>
+
+                    <p>Введите число</p>
+                    <input type="text" id="input-user-number" class="input-style" placeholder="input the number">
+                    <button id="btn-check-input" class="btn-style">Check</button>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 02 - changeable button</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте кнопку. После первого нажатия кнопка должна сменить текст на себе на "Не нажимать", и
+                        вывести на экран количество оставшихся попыток - 2. После 2 нажатий кнопки, она должна скрыть
+                        сама себя.
+
+                        Внимание! Подсказка!
+                        Задачи где нужно отследить число нажатий, или действий решаются одинаково с помощью переменной
+                        счетчика, причем счетчик объявляется за пределами функции - иначе он не сможет сохранить свое
+                        значение и при каждом запуске функции будет сбрасываться на стартовое значение. Потом внутри
+                        функции мы увеличиваем счетчик и в зависимости от его значения, делаем необходимые действия.
+
+
+                        let count = 0;
+                        element.onclick = function(){
+                        count++;
+                        if (count == )...
+                        if (count == )...
+                        if (count == )...
+                        }
+                    </p>
+
+                    <button id="btn-multifunctional" class="btn-style">click</button>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 03 - campare 2 numbers</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте два поля для ввода чисел. После ввода и нажатия кнопки - выведите большее число.
+                        <br>
+                        <b>Hint</b>
+                        Не забываем, что все что мы получаем из input - строки. А строки сравниваются посимвольно.
+                        Т.е. две строки ab и aac будет большей строка ab - поскольку первые символы равны, а вот вторые
+                        нет, символ b больше чем a. Более подробно почитать можно здесь.
+                    </p>
+
+                    <button id="btn-compare" class="btn-style">Compare</button>
+                    <input type="text" name="" id="input-first-number" placeholder="input first number"
+                        class="input-style">
+                    <input type="text" name="" id="input-second-number" placeholder="input second number"
+                        class="input-style">
+                    <input type="text" name="" id="output-larger-number" placeholder="output larger number"
+                        class="input-style">
+
+                    <div class="unit4-task3"></div>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 04 - zodiac sign</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте два поля. В одно пользователь вводит день рождения, во второй - месяц (в виде числа).
+                        Выведите знак зодиака под каким родился пользователь.
+                        <br>
+                        <b>Внимание! Подсказка!</b>
+                        <br>
+                        Итак, мы ищем знак зодиака. Знак зодиака определяют три фактора: месяц (m), день от (d1), день
+                        до (d2).
+                        Для козерога даннаые параметры такие от 22 декабря до 19 января. Оооппс.
+                        Два месяца, что делать и тут рождаются чуда условия типа
+
+                        if ( (m == 12 && d >= 22) || (m == 1 && d <=19) ) да, так можно, но даже прочитать сложно.
+                            Хитрость этой задачи в том, что можно комбинировать данные условия для более легкого чтения.
+                            Например, просто в лоб: if ( m==12 && d>=22) alert ("козерог");
+                            if ( m == 1 && d <= 19) alert("козерог"); Не пугайтесь количеству условий, вы же
+                                программировать пришли? Можно и по другому if ( m==1 ){ if (d <=19) alert("Козерог")
+                                else alert("Водолей") } </p> <button id="btn-zodiac" class="btn-style">Zodiac</button>
+                                <input type="number" name="" id="input-birthday" placeholder="input birthday"
+                                    class="input-style">
+                                <input type="number" name="" id="input-birth-month" placeholder="input birth month"
+                                    class="input-style">
+                                <div class="output-zodiac">
+                                </div>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 05 - Chinese calendar</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте input куда пользователь может ввести год рождения. Программа должна вывести символ года
+                        по
+                        китайскому календарю. Подумайте как можно упростить программу.
+                        <br>
+                        <b>Внимание! Подсказка!</b>
+                        Итак, решаем задачу за китайские годы. Первое - годы повторяются с периодичностью 12 лет. Т.е.
+                        возьмем год
+                        крысы:
+                        1972, 1984, 1996, 2008, 2020. Поделим на 12 и получим остаток
+
+
+                        1972 % 12 = 4
+                        1984 % 12 = 4
+                        1996 % 12 = 4
+                        т.е. зная остаток от деления на 12 мы легко определим знак. Теперь нам нужно прописать 12
+                        условий вида: если
+                        остаток равен = чему-то то это год!
+
+                        Вас пугает 12 if?
+
+                        Не бойтесь, на курсах часто говорят что код должен быть коротким, но в реальной практике вы
+                        столкнетесь и с
+                        большим количеством кода! Вперед!
+                    </p>
+
+                    <button id="btn-сhinese-calendar" class="btn-style">Chinese</button>
+                    <input type="number" name="" id="inputYearOfBirthday" placeholder="input year of birthday" class="input-style">
+                    <div class="output-сhinese-calendar">
+
+                        
+                        <div class="unit4-task5"></div>
+                </section>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
