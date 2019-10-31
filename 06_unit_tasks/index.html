@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Unit 00</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title-h1">Course: [_JS_] practical javaScript</h1>
+        <h1 class="title-h2">Author: Alexander Luschenko</h2>
+            <h2 class="title-h3">Тема V: " "</h4>
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 01 - color reading </h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Повторите действия указанные в уроке. Добавьте кнопку, при нажатии на которую считывается цвет
+                        выбранный пользователем
+                        (input type=color), и применяется к фону страницы.
+                    </p>
+
+                    <div>
+                        Color: <input type="color" class="input-color input-style">
+                        <button id="btn-color" class="btn-style">Apply</button>
+                    </div>
+
+
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 02 - change background color and text color </h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте два input[type=color]. В одном пользователь может выбрать цвет фона, во втором цвет
+                        текста.
+                        При нажатии на кнопку Применить - примените эти цвета к странице.
+                        Также добавьте кнопку сброса цвета на черный-белый.
+                    </p>
+
+                    <div>
+                        Background-color: <input type="color" class="input-background-color input-style">
+                        Text-color: <input type="color" class="input-text-color input-style">
+                        <button id="btn-colorful" class="btn-style">colorful</button>
+                        <button id="btn-black-and-white" class="btn-style">black & white</button>
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 03 & 04 - RANGE - сhanging the text font size</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Добавьте input[type=range] начальным значением которого есть число 14, а конечным 48.
+                        Ползунок установлен на 16.
+                        При изменении положения ползунка меняйте размер текста в соответствии со значением.
+
+                        Рядом с созданным ползунком добавьте span куда выводите текущее значение ползунка.
+                        Для этого используйте событие input, oninput.
+                    </p>
+
+                    <div>
+                        Range: <input type="range" class="input-range" min="14" , max="48" , value="16" , step="1">
+                        <label for="font-size">font size</label>
+                        <span id="output-value">16</span>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 05 - 3 input type=range rgb</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте три input type=range. Значения от нуля до 255. Создайте блок, цвет rgb которого
+                        определятеся значением на ползунках.
+                        При изменении положения ползунков, изменяется цвет блока.
+                        Возле каждого ползунка выводить текущее значение цвета.
+                    </p>
+
+                    <div class="color-general">
+                        R: <input type="range" class="input-red" min="0" , max="255" , value="0", step="1">
+                        <span id="span-red">0</span>
+                        <br>
+                        G: <input type="range" class="input-green" min="0" , max="255" , value="128", step="1">
+                        <span id="span-green">0</span>
+                        <br>
+                        B: <input type="range" class="input-blue" min="0" , max="255" , value="255", step="1">
+                        <span id="span-blue">0</span>
+                    </div>
+                    <div class="color-block"></div>
+
+
+                </section>
+
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
