@@ -75,19 +75,12 @@ inputRange.oninput = () => {
 */
 
 const inputR = document.querySelector('.input-red');
-console.log(inputR)
 const spanR = document.querySelector('#span-red');
-console.log(spanR)
 const inputG = document.querySelector('.input-green');
-console.log(inputG)
 const spanG = document.querySelector('#span-green');
-console.log(spanG)
 const inputB = document.querySelector('.input-blue');
-console.log(inputB)
 const spanB = document.querySelector('#span-blue');
-console.log(spanB)
 const colorBlock = document.querySelector('.color-block');
-console.log(colorBlock)
 const colorGeneral = document.querySelector('.color-general');
 
 colorGeneral.oninput = function () {
@@ -97,7 +90,6 @@ colorGeneral.oninput = function () {
   spanG.innerHTML = two;
   there = inputB.value;
   spanB.innerHTML = there;
-  // body.style.backgroundColor = 'rgba(' + one + ', ' + two + ', ' + there + ')';
   colorBlock.style.backgroundColor = 'rgb(' + one + ', ' + two + ', ' + there + ')';
 };
 
