@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style2.css"> -->
+    <title>Unit 05</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title-h1">Course: [_JS_] practical javaScript</h1>
+        <h1 class="title-h2">Author: Alexander Luschenko</h2>
+            <h2 class="title-h3">Тема V: "DOM. ВЫВОД НА СТРАНИЦУ"</h4>
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 01 - change styles.css</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте два файла css - один подключите сразу.
+                        Во втором пропишите стили так, чтобы скрывались все изображения, фоны и блоки.
+                        Оставался один текст, весь текст черным, выравнивание по левому краю, шрифт - serif.
+                        Добавьте кнопку при нажатии на которую вы должны получить элемент link href - где прописан путь
+                        к файлу css и заменить его на второй файл. Т.е. было:
+                        &ltlink rel="stylesheet" href="style1.css"&gt
+                        стало
+                        &ltlink rel="stylesheet" href="style2.css"&gt
+                        Кнопка также должна скрываться.
+                    </p>
+                    <button id="btn-change-style" class="btn-style">Change CSS</button>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 02 - click button -> add world </h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте параграф с текстом Hello. Добавьте кнопку. При нажатии кнопки к содержимому параграфа
+                        добавьте word.
+                        При каждом нажатии - добавляйте слово world. т.е:
+                        нажатие 1
+                        Hello word
+                        нажатие 2
+                        Hello word word
+                        и так далее. Сколько нажатий - столько word и добавляете.
+                    </p>
+
+                    <p class="text-add-world">Hello</p>
+                    <button id="btn-add-world" class="btn-style">add word</button>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 03 - insertAdjacentHTML -> afterbegin</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте параграф с текстом Hello. При нажатии кнопки между тегом p и словом Hello добавьте
+                        любой текст.
+                        Используйте insertAdjacentHTML.
+                    </p>
+
+                    <p class="text-afterbegin">Hello</p>
+                    <button id="btn-afterbegin" class="btn-style">afterbegin</button>
+
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 04 - insertAdjacentHTML -> beforebegin</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте параграф с текстом Hello. При нажатии кнопки перед тегом p добавьте любой текст.
+                        Используйте insertAdjacentHTML.
+                    </p>
+
+                    <p class="text-beforebegin">Hello</p>
+                    <button id="btn-beforebegin" class="btn-style">beforebegin</button>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 05 - insertAdjacentHTML -> beforeend</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте параграф с текстом Hello. При нажатии кнопки после слова Hello и перед закрывающимся
+                        тегом p добавьте любой текст.
+                        Используйте insertAdjacentHTML.
+                    </p>
+
+                    <p class="text-beforeend">Hello</p>
+                    <button id="btn-beforeend" class="btn-style">beforeend</button>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 06 - innerHTML & innerText</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте параграф с текстом Hello. При нажатии кнопки перезатрите содержимое параграфа строкой
+                        <b>Hi</b>.
+                        Вставку произведите сналача с помощью innerHTML, затем с помощью innerText.
+                        Изучите отличия вставки.
+                    </p>
+
+                    <p class="text-inner">Hello</p>
+                    <button id="btn-innerHTML" class="btn-style">innerHTML</button>
+                    <button id="btn-innerText" class="btn-style">innerText</button>
+
+
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <h4 class="section-title">Task 07 - outerHTML & outerText</h4>
+                    </div>
+                    <p class="description"><b><u>Условие задачи:</u></b>
+                        Создайте параграф с текстом Hello. При нажатии кнопки перезатрите параграф строкой <b>Hi</b>.
+                        Вставку произведите сналача с помощью outerHTML, затем с помощью outerText.
+                        Изучите отличия вставки.
+                    </p>
+
+                    <p class="text-outer">Hello</p>
+                    <button id="btn-outerHTML" class="btn-style">outerHTML</button>
+                    <button id="btn-outerText" class="btn-style">outerText</button>
+                </section>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
